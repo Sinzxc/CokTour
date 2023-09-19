@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Интерактивный тренажёр</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div class="shadow"></div>
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="professionalism">
+                    <div class="professionalism__title-wrap">
+                        <span class="professionalism__year">2023</span>
+                        <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/tent.svg" alt="img"></a></li>\
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/bus.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/ship.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/circle.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="header-title-wrap">
+                    <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                    <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                </div>
+    
+                <div class="logo-wrap">
+                    <img src="../img/logo/logo.svg" alt="logo" class="logo">
+                </div>
+    
+                <div class="home">
+                    <a href="../index.html"><img src="img/home.svg" alt="go home"></a>
+                </div>
+    
+                <button class="burger-btn">
+                    <img src="../img/burger.svg" alt="logo" class="burger-img">
+                    <img src="../img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                </button>
+    
+                <div class="right-side-menu">
+                    <button class="burger-btn-close">Закрыть</button>
+                    <div class="right-side-menu__block">
+                        <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                        <label class="switch-button" for="switch">
+                            <div class="switch-outer">
+                            <input id="switch" type="checkbox" class="dark2">
+                            <div class="button">
+                                <span class="button-toggle"></span>
+                                <span class="button-indicator"></span>
+                            </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header__container -->
+    </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Гостеприимство – это кубок, наполненный добротой</h1>
+                    <p class="topic-subtitle">#Гостеприимство</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="virtual-simulator-section">
+            <div class="container virtual-simulator__container">
+                <div class="card-navigation-line"></div>
+                <h4 class="virtual-simulator__title">Интерактивный тренажёр</h4>
+
+                <div class="virtual-simulator__wrapper">
+                    <div class="virtual-simulator__header">
+                        <div class="task-text-wrap">Задание: <br>
+                            <span class="task-text accent-color-text">Установите соответствия</span>
+                        </div>
+                        <div class="virtual-simulator__header-rigth-side">
+                            <div class="delimeter"></div>
+                            <div class="question"><img src="img/question.svg" alt="?">
+                                <div class="block-answer">
+                                    Ваша задача состоит в том, чтобы соединить вопрос с ответом круглишками слева направо
+                                </div>
+                            </div>
+                            <div class="number"><span class="num-now">1</span><span class="all-num">7</span></div>
+                            <div class="timer-wrap"><p class="timer">10:00</p></div>
+                        </div>
+                    </div>
+                    <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
+                    <div class="horizontal-delimeter"></div>
+
+                    <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
+                       <div class="task-img">
+                            <img src="img/image 15.png" alt="">
+                       </div>
+                       <form action="" class="task-form-1">
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Официант хочет познакомиться с гостем</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Улыбающийся сотрудник отеля, предлагающий гостю бесплатный приветственный напиток</p>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <div class="task-two-img">
+                            <div class="img-block">
+                                <img src="img/image 10.png" alt="">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                            </div>
+                            <div class="img-block">
+                                <img src="img/image 11.png" alt="">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice-part-wrap" id="task-3">
+                        <div class="task-img">
+                            <img src="img/img16.png" alt="">
+                       </div>
+                       <form action="" class="task-form-1">
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Проявляет гостеприимство и доброту, говорит о готовности организации заботиться о клиентах</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Администратор защищается и не открыт для нового общения</p>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+                    <div class="practice-part-wrap" id="task-4">
+                        <div class="canvas-task">
+                            <div class="connect-task__wrapper">
+                                <div class="connet__quation-block">Радушное гостеприимство</div>
+                                <div class="connet__quation-block">Гостеприимство на высшем уровне</div>
+                                <div class="connet__quation-block">Гостеприимство в стиле "комфорт"</div>
+                            </div>
+    
+                            <div class="canvas-wrapper">
+                                <div class="canvas-container">
+                                    <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                                </div>
+                                <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                                <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                                <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                                <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                                <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                                <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                            </div>
+    
+                            <div class="connect-task__answer-wrapper">
+                                <div class="connect__answer-block">Гостиница</div>
+                                <div class="connect__answer-block">Ресторан</div>
+                                <div class="connect__answer-block">Туристическое агенство</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice-part-wrap" id="task-5">
+                        <div class="task-img">
+                            <img src="img/img18.png" alt="">
+                       </div>
+                       <form action="" class="task-form-1">
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Помощь и забота</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Внимание и дружелюбие</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Доступность и доступность</p>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-6">
+                        <div class="task-img">
+                            <img src="img/img17.png" alt="">
+                       </div>
+                       <form action="" class="task-form-1">
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Улыбка официантки и дружелюбное обслуживание помогают создать теплую и комфортную атмосферу для клиента.</p>
+                            </div>
+                        </div>
+                        <div class="variant-checkbox">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox">
+                                <i class="check"></i>
+                            </div>
+                            <div class="text-otvet">
+                                <p>Подчеркивает заботу и внимание к его потребностям, что влияет на его общее впечатление об организации и способствует положительному опыту.</p>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+                    <div class="practice-part-wrap" id="task-7">
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>дружелюбие</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>удивление</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>внимание</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>заботу</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>вежливость</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>открытость</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="virtual-simulator__footer">
+                        <div class="right-side">
+                            <div class="right-side_btn-wrap">
+                                <button class="back-btn">Назад</button>
+                                <button class="next-btn">Далее</button>
+                            </div>
+                            <div class="right-side__circles">
+                                <div class="circle circle_active" data-button="task-1"></div>
+                                <div class="circle circle-2" data-button="task-2"></div>
+                                <div class="circle circle-3" data-button="task-3"></div>
+                                <div class="circle circle-4" data-button="task-4"></div>
+                                <div class="circle circle-5" data-button="task-5"></div>
+                                <div class="circle circle-6" data-button="task-6"></div>
+                                <div class="circle circle-7" data-button="task-7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 29.02.10 
+                </h4>
+                <p class="footer-subtitle">
+                    Конструирование, моделирование и технология изготовления изделий легкой промышленности 
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.02.01 
+                </h4>
+                <p class="footer-subtitle">
+                    Основы конструирования и моделирования швейных изделий
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <script src="script/timer.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../script/burger_script.js"></script>
+    <script src="../script/dark_theme_script.js"></script>
+    <script src="script/task-switcher-2.js"></script>
+    
+    <!-- Палатки -->
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</body>
